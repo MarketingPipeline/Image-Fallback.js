@@ -20,7 +20,7 @@
 
 
 
-> Note: Currently, this library is not ready to add into your next project & needs improvements. Look back soon! If you are a Javascript developer & would like to try & address these problems look at the [todo](todo) 
+> Note: Currently, this library is not ready to add into your next project & needs improvements. Look back soon! If you are a Javascript developer & would like to try & address these problems look at the [todo](todo.md) 
 
 
 ## Example and Usage
