@@ -2,7 +2,7 @@
 
 
 <a href="https://github.com/MarketingPipeline/Image-Fallback/">
-<img height=350 alt="Image Fallback Support - Handle Image Errors With Ease" src="https://capsule-render.vercel.app/api?type=waving&color=c4a2bd&height=300&section=header&text=Image-Fallback.js%20👍&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Handle%20%Image%20Errors%20With%20Ease%20👍&descAlignY=60&descAlign=50"></img></a>
+<img height=350 alt="Image Fallback Support - Handle Image Errors With Ease" src="https://capsule-render.vercel.app/api?type=waving&color=c4a2bd&height=300&section=header&text=Image-Fallback.js%20&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Handle%20%Image%20Errors%20With%20Ease%20👍&descAlignY=60&descAlign=50"></img></a>
 
 <p align="center">
   <b>Automatically provide fallback support for all &lt;img> / images not found! </b>
@@ -20,7 +20,7 @@
 
 
 
-
+> Note: Currently, this library is not ready to add into your next project & needs improvements. Look back soon! If you are a Javascript developer & would like to try & address these problems look at the [todo](todo) 
 
 
 ## Example and Usage
