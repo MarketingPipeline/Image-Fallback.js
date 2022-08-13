@@ -2,55 +2,38 @@
 // Created by github.com/MarketingPipeline
 // Add image load errors with ease!
 
+// Function to detect image load errors   
+// https://stackoverflow.com/questions/9815762/detect-when-an-image-fails-to-load-in-javascript
 
-
-
-
-
-/// Function to detect image load errors   
-///// https://stackoverflow.com/questions/9815762/detect-when-an-image-fails-to-load-in-javascript
-
-function testImage(url) {
-
+// Listen for Image Success and Errors
+function testImage(imgElement) {
     // Define the promise
-    const imgPromise = new Promise(function imgPromise(resolve, reject) {
-
-        // Create the image
-        const imgElement = new Image();
-
+    const imgPromise = new Promise(function imgPromiseCheck(resolve, reject) {
         // When image is loaded, resolve the promise
         imgElement.addEventListener('load', function imgOnLoad() {
             resolve(this);
         });
-
         // When there's an error during load, reject the promise
         imgElement.addEventListener('error', function imgOnError() {
             reject();
         })
-
-        // Assign URL
-        imgElement.src = url;
-
     });
-
     return imgPromise;
 }
 
-
-/// Check all images on pages for any errors
-
-let images = document.getElementsByTagName('img')
-
-for (image of images) {
-	testImage(image.src).then(
-
-// If an error occured		
-		
-  // Show Fallback / Image Not Found (Picture)		
+//Gather all img elements on page
+let images = document.getElementsByTagName('img');
+//Check all images for any promise errors
+for (let image of images) {
+	//Promise returned
+	testImage(image).then(
+	//On success, do nothing
+    function success() {
+    },
+	//On image loading error		
     function rejected() {
+		//Replace errored image source with fallback picture of Image Not Found
         image.setAttribute("src", "http://placehold.jp/500x333.png?text=Image Error");
-
     }
-
 );
 }
