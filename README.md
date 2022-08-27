@@ -36,7 +36,7 @@ How to use <b><i>Image-Fallback.js</b></i>:
 
    include this [script](https://github.com/MarketingPipeline/Image-Fallback.js/blob/main/version/1.0.1/src/image-fallback.js) anywhere in your HTML document.
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Image-Fallback.js/version/1.0.1/src/image-fallback.js" defer> 
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Image-Fallback.js/version/1.0.1/src/image-fallback.js" defer></script>
     
 then you are done! All images that do not have a valid source will show a <code>Image Not Found</code>
 
