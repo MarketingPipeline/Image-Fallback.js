@@ -20,7 +20,6 @@
 
 
 
-> Note: Currently, this library is not ready to add into your next project & needs improvements. Look back soon! If you are a Javascript developer & would like to try & address these problems look at the [todo](TODO.md) 
 
 
 ## Example and Usage
@@ -33,20 +32,11 @@ You can view a demo of Image-Fallback.js in use [here.](https://marketingpipelin
 
 How to use <b><i>Image-Fallback.js</b></i>:
 
-  Add fallback support to all images in your HTML document! Like so -
 
 
-             <!--- Valid Image Path ---> 
-            <img src="https://images.unsplash.com/photo-1562184647-5c4f531aef0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-	    
-             <!--- Invalid Image Path (Image Not Found Will Show) ---> 
-            <img src="test-error">
-
-
-
-   include this [script](https://github.com/MarketingPipeline/Markdown-Tag/blob/main/markdown-tag.js) at the <b>bottom</b> of your HTML document.
+   include this [script](https://github.com/MarketingPipeline/Image-Fallback.js/blob/main/version/1.0.1/src/image-fallback.js) anywhere in your HTML document.
          
-    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Image-Fallback.js/version/1.0.1/src/image-fallback.js" defer> 
     
 then you are done! All images that do not have a valid source will show a <code>Image Not Found</code>
 
