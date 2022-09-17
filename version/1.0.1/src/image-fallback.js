@@ -1,3 +1,4 @@
+var defaultImgError = "http://placehold.jp/500x333.png?text=Image Error"
 function testImage(imgElement) {
     // Define the promise
     const imgPromise = new Promise(function imgPromiseCheck(resolve, reject) {
@@ -17,7 +18,7 @@ function testImage(imgElement) {
 let images = document.getElementsByTagName('img');
 //Check all images for any promise errors
 for (let image of images) {
-	image.setAttribute("data-src", image.src)
+	image.setAttribute("data-test", image.src)
 	//Promise returned
 	testImage(image).then(
 	//On success, do nothing
@@ -26,7 +27,7 @@ for (let image of images) {
 	//On image loading error		
     function rejected() {
 		//Replace errored image source with fallback picture of Image Not Found
-        image.setAttribute("src", "http://placehold.jp/500x333.png?text=Image Error");
+        image.setAttribute("src", defaultImgError);
     }
 );
 }
@@ -51,3 +52,15 @@ if ('IntersectionObserver' in window) {
 	}
 })();
 }
+
+/// Allow image error default to be switched with ease... 
+if (typeof ImageError !== 'undefined') {
+   // Image error (VARIABLE) was defined on page
+	defaultImgError = ImageError
+} /*
+
+else{
+	// Image error was not found.. 
+}
+
+*/
