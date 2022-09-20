@@ -45,7 +45,11 @@ then you are done! All images that do not have a valid source will show a <code>
 
 How to change the <b><i>error image</b></i>:
 
-To change the error image you will need to edit the script, change the image URL used in line <code>51</code> to your prefered image URL or path. Then manually host your <code>Image-Fallback.js</code> file with your modified changes. 
+To change the default error image you will need to set a variable named <code>FallbackImageError</code> with a valid image source (URL or path). Example below - 
+
+```js
+var FallbackImageError = "path/to/valid/image.png"
+```
 
 
 <br>
