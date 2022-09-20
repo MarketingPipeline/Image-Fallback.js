@@ -38,12 +38,12 @@ How to use <b><i>Image-Fallback.js</b></i>:
          
     <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Image-Fallback.js/version/1.0.0/dist/image-fallback.min.js" defer></script>
     
-then you are done! All images that do not have a valid source will show a <code>Image Not Found</code>
+then you are done! All images that do not have a valid source will show a default image with <code>Image Not Found</code>
 
 
 <br>
 
-How to change the <b><i>error image</b></i>:
+How to change the default <b><i>error image</b></i>:
 
 To change the default error image you will need to set a variable named <code>FallbackImageError</code> with a valid image source (URL or path). Example below - 
 
